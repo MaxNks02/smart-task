@@ -1,0 +1,29 @@
+spring:
+  mvc:
+    format:
+      date: yyyy-MM-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 150MB
+      enabled: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /api/docs
+r2dbc:
+  driver: "postgresql"
+  host: "localhost"
+  port: 5432
+  database: "smart_task"
+  username: "postgres"
+  password: "5771199m"
+  locale: "en_US"
+
